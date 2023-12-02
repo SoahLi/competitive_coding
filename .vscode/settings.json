@@ -5,7 +5,8 @@
         "cmath": "cpp",
         "unordered_map": "cpp",
         "iostream": "cpp",
-        "algorithm": "cpp"
+        "algorithm": "cpp",
+        "queue": "cpp"
     },
     "C_Cpp.errorSquiggles": "disabled"
 }
