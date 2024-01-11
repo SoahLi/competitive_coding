@@ -18,9 +18,6 @@ vector<string> divideString(string s, int k, char fill) {
     
 
     if(current.size() > 0) {
-        // while(current.size() != k) {
-        //     current.push_back(fill);
-        // }
         for(int j=current.size(); j<k; j++){
             current += fill;
         }
