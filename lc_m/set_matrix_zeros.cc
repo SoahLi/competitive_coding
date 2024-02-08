@@ -62,9 +62,15 @@ void setZeroes(vector<vector<int> > &matrix){
             if(matrix[i][j] == 0) zeroIndexes.push_back(pair<int, int>(i, j));
         }
     }
+
+    //fill horizontally
+    for(pair<int, int> p: zeroIndexes){
+            fill_n(matrix[p.first].begin(), matrix[p.first].size(), 0);
+    }
+
+    //fill vertically
     for(int i=0; i<matrix.size(); i++){
         for(pair<int, int> p: zeroIndexes){
-            fill_n(matrix[p.first].begin(), matrix[p.first].size(), 0);
             matrix[i][p.second] = 0;
         }
     }
